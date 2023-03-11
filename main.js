@@ -32,8 +32,8 @@ function mainGame () {
     let playerScore = 0;
     let computerScore = 0;
     for(let i=0; i < 5; i++){
-        let playerSelection = prompt("Type 'rock' 'scissors' or 'paper'").trim().toLowerCase();
-        const playerSelected = playerSelection.toLowerCase();
+        let playerSelection = prompt("Type 'rock' 'scissors' or 'paper'").toLowerCase();
+        const playerSelected = playerSelection.trim()
         const computerSelected = computerPlay()
         if (playerSelected == 'rock' || playerSelected == 'paper' || playerSelected == 'scissors'){
             if(playingRules(playerSelected, computerSelected) == 'It is a tie!'){
